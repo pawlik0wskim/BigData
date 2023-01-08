@@ -17,8 +17,8 @@ def get_col_idx(col_name):
 
 dates = pd.date_range(datetime.strptime('2019-01-01', '%Y-%m-%d'),
               datetime.strptime('2020-01-01', '%Y-%m-%d')-timedelta(days=1),freq='d')
-f = open('C:/Users/mateu/Desktop/pojazdy_14_2022-04-17.csv', 'r', encoding='utf-8')
-folder = 'C:/Users/mateu/Desktop/test_unicode2/'
+f = open('/home/vagrant/cpik/pojazdy_14_2022-04-17.csv', 'r', encoding='utf-8')
+folder = '/home/vagrant/generated_data/'
 header = list(csv.reader([f.readline()]))[0]
 
 reg_date_idx = get_col_idx('data_rejestracji_ost')
